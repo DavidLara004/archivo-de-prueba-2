@@ -1,0 +1,14 @@
+Ejercicios 8.5 del libro Introducción a la lógica de programación
+-Ejercicio 4
+Leer dos números y mostrar todos los enteros comprendidos entre ellos.
+-Ejercicio 14
+Mostrar en pantalla los primeros 20 múltiplos de 3.
+-Ejercicio 24
+Leer un número entero y determinar a cuánto es igual al suma de sus dígitos pares.
+-Ejercicio 34
+Generar los números del 1 al 10 utilizando un ciclo que vaya dee 10 a 1.
+Ejercicio 44
+Leer un número y calcularle su factorial.
+
+Librería utilizada: stdio.h
+

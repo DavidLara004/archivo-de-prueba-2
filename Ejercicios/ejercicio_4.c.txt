@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    const int positivo = 12;
+    const int negativo = 11;
+
+    for (int i = 1; i <= 10; i++)
+    {
+        printf("+%i-%i", positivo * i, negativo * i);
+    }
+}

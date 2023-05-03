@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+    //num1 es la variable destinada al primer numero ingresado,num2 es la variable destinada al segundo numero ingresado
     int num1,num2,mayor,menor,i;
     printf("-------------Bienvenido--------- \n");
     printf("Ingrese el primer numero entero:");

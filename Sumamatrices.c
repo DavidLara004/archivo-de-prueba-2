@@ -1,61 +1,42 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-int main()
-{
-    int matrizA[3][2];          // Definir arreglo bidimensional para matriz A
-    int matrizB[3][2];          // Definir arreglo bidimensional para matriz B
-    int resultado[3][2];        // Definir arreglo bidimensional para matriz de resultado
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            matrizA[i][j] = 0;
-        }
+#include<stdio.h>
+int main(){
+    int mat1[2][3]={0,0,0,0,0,0}; //[filas][columnas]
+    int mat2[2][3]={0,0,0,0,0,0};
+    int resul[2][3]={0,0,0,0,0,0};
+    for(int i=0;i<2;i++){ //i=filas
+        for(int j=0;j<3;j++){ //j=columnas
+            scanf("%d",&mat1[i][j]);
+        } 
     }
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            matrizB[i][j] = 0;
-        }
+    for(int i=0;i<2;i++){ 
+        for(int j=0;j<3;j++){
+            scanf("%d",&mat2[i][j]);
+        } 
     }
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            resultado[i][j] = 0;
-        }
+    printf("Su primera matriz es:\n");
+    for(int i=0;i<2;i++){ 
+        for(int j=0;j<3;j++){ 
+            printf("%d  ",mat1[i][j]);
+        } 
+        printf("\n");
     }
-
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            scanf("%d", &matrizA[i][j]);
+    printf("Su segunda matriz es:\n");
+    for(int i=0;i<2;i++){ 
+        for(int j=0;j<3;j++){
+            printf("%d  ",mat2[i][j]);
         }
+        printf("\n");
     }
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            scanf("%d", &matrizB[i][j]);
-        }
+    for(int i=0;i<2;i++){ 
+        for(int j=0;j<3;j++){
+            resul[i][j]=mat1[i][j]+mat2[i][j];
+        } 
     }
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            resultado[i][j] = matrizA[i][j] + matrizB[i][j];
-        }
-        
-    }
-    for (int i = 0; i < 3; i++) // Uso de ciclo for para recorrer las filas de la matriz
-    {
-        for (int j = 0; j < 2; j++) // Uso del ciclo for para recorrer las columnass de la matriz
-        {
-            printf("%i ", resultado[i][j]);
-        }
+    printf("Su matriz resultante es:\n");
+    for(int i=0;i<2;i++){ 
+        for(int j=0;j<3;j++){
+            printf("%d  ",resul[i][j]);
+        } 
         printf("\n");
     }
     return 0;

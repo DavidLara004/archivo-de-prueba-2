@@ -4,7 +4,7 @@ int main(){
     int mat2[2][3]={0,0,0,0,0,0};
     int resul[2][3]={0,0,0,0,0,0};
     for(int i=0;i<2;i++){ //i=filas
-        for(int j=0;j<3;j++){ //j=columnas
+        for(int j=0;j<3;j++){ //j=columna
             scanf("%d",&mat1[i][j]);
         } 
     }

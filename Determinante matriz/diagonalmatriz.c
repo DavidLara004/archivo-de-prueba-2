@@ -26,9 +26,22 @@ int main()
     {
         for (int j = 0; j < columnas; j++)
         {
+        if (i==j)
+        {
+            matriz[i][j]=1;
+        }
+        
+        }
+        printf("\n");
+    }
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
             printf("%d", matriz[i][j]);
         }
         printf("\n");
     }
+
     return 0;
 }

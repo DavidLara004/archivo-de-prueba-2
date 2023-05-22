@@ -9,7 +9,7 @@ int main()
     scanf("%d", &filas);//Obtiene el numero de filas que quiere el usuario
     printf("Ingrese el numero de columnas que desea para su matriz: ");
     scanf("%d", &columnas);//Obtiene el numero de columnas que quiere el usuario
-    int matriz[filas][columnas];//Creacion de matriz bidimensional
+    int matriz[filas][columnas];//Creacion y definicion de la matriz bidimensional
     //Se utiliza un doble for para que recorra tanto filas como columnas gracias a las variables contadoras i y j
     for (int i = 0; i < filas; i++)
     {

@@ -8,7 +8,7 @@ int main()
     scanf("%d", &filas);
     printf("Ingrese el numero de columnas que desea para su matriz: ");
     scanf("%d", &columnas);
-    int matriz[filas][columnas][num];
+    int matriz[num][filas][columnas];
     for (int n = 0; n < num; n++)
     {
         for (int i = 0; i < filas; i++)
